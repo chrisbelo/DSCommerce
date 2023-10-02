@@ -25,18 +25,53 @@
 html, body{
    background-color: var(--dsc-color-bg-primary);
 }
-/*COMEÇANDO O CABEÇALHO*/
+main{
+    padding: 0 20px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*GENERIC STYLES*/
+.dsc-container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 
+}
+.dsc-mb20{
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*CARD STYLES*/
+.dsc-card{
+    margin-bottom: 20px;
+    border: 1px solid var(--dsc-color-card-bg);
+    border-radius: 4px;
+    background-color:var(--dsc-color-font-tertiary);
+}
+.dsc-line-bottom{
+    border-bottom: 1px solid var(--dsc-color-card-bg);
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*HEADER STYLES*/
 header{
     background-color:var(--dsc-color-bg-secondary);
     height: 70px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
     
 }
 a, a:hover{
     text-decoration: none;
     color: unset;
+}
+nav a{
+    font-size: 14px;
+    font-weight: 700;
+}
+nav h1{
+    font-size: 24px;
 }
 nav{
     color: var(--dsc-color-font-primary);
@@ -44,27 +79,19 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.container{
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*BUTTOM STYLES*/
+.dsc-btn-page-container{
     width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-
-}
-/*INICIANDO O A MAIN*/
-.card{
-    margin-bottom: 20px;
-    border: 1px solid var(--dsc-color-card-bg);
-    border-radius: 4px;
-    background-color:var(--dsc-color-font-tertiary);
-}
-
-/*BOTÕES*/
-.btn-page-container{
-    width: 220px;
     display: grid;
     grid-gap: 20px;
 }
-.btn{
+@media (min-width: 576px){
+    .dsc-btn-page-container{
+        width: 220px;
+    }
+}
+.dsc-btn{
     border-radius: 4px;
     height: 42px;
     font-size: 16px;
@@ -73,17 +100,15 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.btn-blue{ 
+.dsc-btn-blue{ 
     background-color: var(--dsc-color-btn-primaty);
     color: var(--dsc-color-font-tertiary);
 }
-.btn-white{
+.dsc-btn-white{
     background-color: var(--dsc-color-font-tertiary);
     color: var(--dsc-color-btn-primaty);
     border: 1px solid var(--dsc-color-btn-primaty);
 }
-/*INICIO DO CARRINHO DE COMPRAS*/
 
-.line-bottom{
-    border-bottom: 1px solid var(--dsc-color-card-bg);
-}
+
+
