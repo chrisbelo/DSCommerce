@@ -221,6 +221,20 @@ nav{
 .dsc-input-error{
     border: 1px solid var(--dsc-color-error);
 }
+.dsc-select:invalid{
+    color: var(--dsc-color-font-placeholder);
+}
+.dsc-select option[disabled]{
+    display: none;
+}
+.dsc-select option{
+    color: var(--dsc-color-font-primary);
+}
+.dsc-textarea{
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
+}
 .dsc-form-error{
     color: var(--dsc-color-error) ;
     font-size: 12px;
